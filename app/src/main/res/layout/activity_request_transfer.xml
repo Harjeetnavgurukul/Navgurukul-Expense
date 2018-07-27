@@ -38,10 +38,11 @@
         android:layout_height="wrap_content"
         android:text="Transfer Details"
         android:textColor="#000"
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="60sp"
         android:textSize="20sp"
         android:textStyle="bold"
         android:id="@+id/Details"
+        android:layout_centerHorizontal="true"
         />
 
     <EditText
@@ -51,6 +52,7 @@
         android:layout_below="@id/Details"
         android:layout_centerHorizontal="true"
         android:hint="How much money do you need?"
+        android:layout_marginTop="10sp"
         />
 
     <Spinner
@@ -79,6 +81,8 @@
         android:textStyle="bold"
         android:textColor="#000"
         android:id="@+id/Account1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
         />
 
     <EditText
@@ -124,7 +128,7 @@
         android:layout_below="@id/Holder"
         android:layout_centerHorizontal="true"
         android:background="#000"
-        android:text="Submit Transfer Request>"
+        android:text="Submit Transfer Request >"
         android:textColor="#fff"
         android:id="@+id/Bill"
         android:shadowDx="0"
