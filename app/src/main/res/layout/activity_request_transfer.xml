@@ -6,12 +6,131 @@
     android:layout_height="match_parent"
     tools:context=".RequestTransfer">
 
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#000"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" >
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add transfer Request"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_marginTop="10sp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Transfer Request.....!"
+        android:text="Transfer Details"
+        android:textColor="#000"
+        android:layout_marginTop="80sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/Details"
+        />
+
+    <EditText
+        android:id="@+id/Money"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Details"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp"
+        android:hint="How much money do you need?"
+        />
+
+    <Spinner
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Money"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/need_money"
+        />
+
+    <EditText
+        android:layout_width="300sp"
+        android:layout_height="80sp"
+        android:layout_below="@id/need_money"
+        android:layout_centerHorizontal="true"
+        android:hint="Why is the money needed?"
+        android:id="@+id/needed"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/needed"
+        android:text="Account Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/Account1"
+        />
+
+    <EditText
+        android:id="@+id/Account"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Account1"
+        android:layout_centerHorizontal="true"
+        android:hint="Account Number"
+        />
+
+    <EditText
+        android:id="@+id/Number"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Account"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm Account Number"
+        />
+
+    <EditText
+        android:id="@+id/IFSC"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Number"
+        android:layout_centerHorizontal="true"
+        android:hint="IFSC Code"
+        />
+
+    <EditText
+        android:id="@+id/Holder"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IFSC"
+        android:layout_centerHorizontal="true"
+        android:hint="Name of Account Holder"
+        />
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/Holder"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:text="Submit Transfer Request>"
+        android:textColor="#fff"
+        android:id="@+id/Bill"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="6"
+        android:layout_marginTop="15dp"
         />
 
 </RelativeLayout>

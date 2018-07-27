@@ -49,6 +49,7 @@ public class LandingPage extends AppCompatActivity {
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.ic_menu_black_24dp);
 
+
         //Open gallery by click button....!
         button = findViewById(R.id.Bill);
         button.setOnClickListener(new View.OnClickListener() {

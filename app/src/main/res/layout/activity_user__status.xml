@@ -6,12 +6,143 @@
     android:layout_height="match_parent"
     tools:context=".User_Status">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="User Status.....!"
+        android:text="Bangalore Facility Status"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp"
+        android:id="@id/text"
+        android:layout_marginTop="70sp"
         />
 
+    <RelativeLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#000"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar" >
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Status"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_marginTop="10sp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="#000"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/relative_1"
+        android:layout_marginTop="150dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 19250"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="you've spent 78 days with NG family now."
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="100sp"
+        android:layout_below="@id/relative_1"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:id="@id/relative_2"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 0 spent in the last week"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:id="@+id/text1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="you are within the ₹1750/week limit of your facility. wohoo!"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text1"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="100sp"
+        android:layout_below="@id/relative_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:background="#000"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 0 spent in the last month"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:id="@+id/text2"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="you are within the ₹1750/month limit of your facility. wohoo!"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/text2"
+            />
+
+    </RelativeLayout>
 </RelativeLayout>
