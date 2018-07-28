@@ -6,17 +6,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
 
 public class RequestBillPayment extends AppCompatActivity {
 
     Spinner spinner;
     Button button;
+    ImageView back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_bill_payment);
+
+        //Back by Click...!
+        back = findViewById(R.id.image1);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(RequestBillPayment.this,LandingPage.class));
+            }
+        });
 
         //Upload Bill Photo...!
         button = findViewById(R.id.Bill);

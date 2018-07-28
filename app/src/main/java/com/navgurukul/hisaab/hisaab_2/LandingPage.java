@@ -28,7 +28,7 @@ public class LandingPage extends AppCompatActivity {
     private ActionBarDrawerToggle t;
     private NavigationView nv;
     EditText editText;
-    Button button;
+    Button button, button1;
 
 
     @Override
@@ -41,6 +41,17 @@ public class LandingPage extends AppCompatActivity {
 
         dl.addDrawerListener(t);
         t.syncState();
+
+        //Make Toast...
+        button1 = findViewById(R.id.Add);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(LandingPage.this,
+                        "Add", Toast.LENGTH_LONG).show();
+
+            }
+        });
 
 //        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -62,14 +73,14 @@ public class LandingPage extends AppCompatActivity {
             }
         });
 
-        nv = (NavigationView) findViewById(R.id.nav_view);
+        nv = findViewById(R.id.nav_view);
         nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 if (id == R.id.nav_status) {
                     startActivity(new Intent(LandingPage.this, User_Status.class));
-                } else if (id == R.id.nav_bill) {
+                } else if (id == R.id.nav_Bill) {
                     startActivity(new Intent(LandingPage.this, RequestBillPayment.class));
                 } else if (id == R.id.nav_transfer) {
                     startActivity(new Intent(LandingPage.this, RequestTransfer.class));

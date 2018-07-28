@@ -4,23 +4,28 @@
         <item
             android:id="@+id/nav_status"
             android:icon="@drawable/ic_face_black_24dp"
-            android:title="Your Status" />
+            android:title="Your Status"
+            />
         <item
-            android:id="@+id/nav_bill"
+            android:id="@+id/nav_Bill"
             android:icon="@drawable/ic_payment_black_24dp"
-            android:title="Request Bill Payment" />
+            android:title="Request Bill Payment"
+            />
         <item
             android:id="@+id/nav_transfer"
             android:icon="@drawable/ic_attach_money_black_24dp"
-            android:title="Request Transfer" />
+            android:title="Request Transfer"
+            />
         <item
             android:id="@+id/nav_payment"
             android:icon="@drawable/ic_visibility_black_24dp"
-            android:title="View Payment" />
+            android:title="View Payment"
+            />
         <item
             android:id="@+id/nav_signOut"
             android:icon="@drawable/ic_power_settings_new_black_24dp"
-            android:title="Signout" />
+            android:title="Signout"
+            />
 
 
     </group>
