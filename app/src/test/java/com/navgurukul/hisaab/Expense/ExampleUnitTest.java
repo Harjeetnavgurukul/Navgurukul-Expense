@@ -1,4 +1,4 @@
-package com.navgurukul.hisaab.hisaab_2;
+package com.navgurukul.hisaab.Expense;
 
 import org.junit.Test;
 

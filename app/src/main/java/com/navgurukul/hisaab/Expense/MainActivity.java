@@ -1,14 +1,12 @@
-package com.navgurukul.hisaab.hisaab_2;
+package com.navgurukul.hisaab.Expense;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,LandingPage.class));
+                finish();
             }
         });
 

@@ -10,7 +10,7 @@
 
 <!--landing page all styles...................    -->
 <!--Expense button style.............-->
-    <style name="add_expence">
+    <style name="add_expense">
         <item name="android:layout_width">300dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_below">@id/Description</item>

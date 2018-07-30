@@ -1,4 +1,4 @@
-package com.navgurukul.hisaab.hisaab_2;
+package com.navgurukul.hisaab.Expense;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -26,6 +26,7 @@ public class RequestBillPayment extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(RequestBillPayment.this,LandingPage.class));
+                finish();
             }
         });
 

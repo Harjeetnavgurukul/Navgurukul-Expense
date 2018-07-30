@@ -69,12 +69,11 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edittext"
+        android:hint="MM/DD/YY"
         android:layout_centerHorizontal="true"
-        android:hint="MM/DD/YYY"
-        android:id="@+id/EditText"
         android:onClick="Datepickkrlo"
-        />
+        android:id="@+id/EditText"
+        android:layout_below="@id/edittext"/>
 
     <Spinner
         android:layout_width="300dp"
@@ -115,12 +114,9 @@
 
 <!--Add expense button...............-->
     <Button
-        style="@style/add_expence"
+        style="@style/add_expense"
         android:id="@+id/Add"
         />
-
-
-
 
 </RelativeLayout>
 
