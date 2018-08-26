@@ -43,7 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/relative_2"
-        android:visibility="gone">
+        android:visibility="gone"
+        >
 
 
         <ImageView
@@ -104,8 +105,36 @@
             android:shadowRadius="6"
             android:shadowDx="0"
             android:shadowDy="0"
-            android:shadowColor="#51ada8"/>
+            android:shadowColor="#51ada8"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not have an account? SignUp here"
+            android:layout_below="@id/btn_login"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/SignUp"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:layout_below="@id/SignUp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Forgot"
+            />
     </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progress"/>
 
 
 
